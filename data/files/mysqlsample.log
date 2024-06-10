@@ -1,0 +1,133 @@
+2015-10-26 19:35:20 13762 [Note] Plugin 'FEDERATED' is disabled.
+2015-10-26 19:35:20 13762 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2015-10-26 19:35:20 13762 [Note] InnoDB: The InnoDB memory heap is disabled
+2015-10-26 19:35:20 13762 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2015-10-26 19:35:20 13762 [Note] InnoDB: Memory barrier is not used
+2015-10-26 19:35:20 13762 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2015-10-26 19:35:20 13762 [Note] InnoDB: Using Linux native AIO
+2015-10-26 19:35:20 13762 [Note] InnoDB: Using CPU crc32 instructions
+2015-10-26 19:35:20 13762 [Note] InnoDB: Initializing buffer pool, size = 512.0M
+2015-10-26 19:35:21 13762 [Note] InnoDB: Completed initialization of buffer pool
+2015-10-26 19:35:21 13762 [Note] InnoDB: Highest supported file format is Barracuda.
+2015-10-26 19:35:21 13762 [Note] InnoDB: 128 rollback segment(s) are active.
+2015-10-26 19:35:21 13762 [Note] InnoDB: Waiting for purge to start
+2015-10-26 19:35:21 13762 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.26-74.0 started; log sequence number 710963181
+2015-10-26 19:35:21 13762 [Note] RSA private key file not found: /var/lib/mysql//private_key.pem. Some authentication plugins will not work.
+2015-10-26 19:35:21 13762 [Note] RSA public key file not found: /var/lib/mysql//public_key.pem. Some authentication plugins will not work.
+2015-10-26 19:35:21 13762 [Note] Server hostname (bind-address): '*'; port: 33306
+2015-10-26 19:35:21 13762 [Note] IPv6 is available.
+2015-10-26 19:35:21 13762 [Note]   - '::' resolves to '::';
+2015-10-26 19:35:21 13762 [Note] Server socket created on IP: '::'.
+2015-10-26 19:35:21 13762 [Warning] 'proxies_priv' entry '@ root@ip-172-30-4-23' ignored in --skip-name-resolve mode.
+2015-10-26 19:35:21 13762 [Note] Event Scheduler: Loaded 2 events
+2015-10-26 19:35:21 13762 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.26-74.0'  socket: '/var/run/mysqld/mysqld.sock'  port: 33306  Percona Server (GPL), Release 74.0, Revision 32f8dfd
+2015-10-26 19:35:13 12955 [Note] /usr/sbin/mysqld: Normal shutdown
+2015-10-26 19:35:13 12955 [Note] Giving 12 client threads a chance to die gracefully
+2015-10-26 19:35:13 12955 [Note] Event Scheduler: Purging the queue. 2 events
+2015-10-26 19:35:13 12955 [Note] Shutting down slave threads
+2015-10-26 19:35:15 12955 [Note] Forcefully disconnecting 6 remaining clients
+2015-10-26 19:35:15 12955 [Warning] /usr/sbin/mysqld: Forcing close of thread 37  user: 'cmon'
+2015-10-26 19:35:15 12955 [Warning] /usr/sbin/mysqld: Forcing close of thread 53  user: 'cmon'
+2015-10-26 19:35:15 12955 [Warning] /usr/sbin/mysqld: Forcing close of thread 38  user: 'cmon'
+2015-10-26 19:35:15 12955 [Warning] /usr/sbin/mysqld: Forcing close of thread 39  user: 'cmon'
+2015-10-26 19:35:15 12955 [Warning] /usr/sbin/mysqld: Forcing close of thread 44  user: 'cmon'
+2015-10-26 19:35:15 12955 [Warning] /usr/sbin/mysqld: Forcing close of thread 47  user: 'cmon'
+2015-10-26 19:35:15 12955 [Note] Binlog end
+2015-10-26 19:35:15 12955 [Note] Shutting down plugin 'partition'
+2015-10-26 19:35:15 12955 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2015-10-26 19:35:15 12955 [Note] Shutting down plugin 'ARCHIVE'
+2015-10-26 19:35:15 12955 [Note] Shutting down plugin 'InnoDB'
+2015-10-26 19:35:15 12955 [Note] InnoDB: FTS optimize thread exiting.
+2015-10-26 19:35:15 12955 [Note] InnoDB: Starting shutdown...
+2015-10-26 19:35:17 12955 [Note] InnoDB: Shutdown completed; log sequence number 710963181
+2015-10-26 19:35:17 12955 [Note] Shutting down plugin 'MyISAM'
+2015-10-26 19:35:17 12955 [Note] Shutting down plugin 'MRG_MYISAM'
+2015-10-26 19:35:17 12955 [Note] Shutting down plugin 'CSV'
+2015-10-26 19:35:17 12955 [Note] Shutting down plugin 'MEMORY'
+2015-10-26 19:35:17 12955 [Note] Shutting down plugin 'sha256_password'
+2015-10-26 19:35:17 12955 [Note] Shutting down plugin 'mysql_old_password'
+2015-10-26 19:35:17 12955 [Note] Shutting down plugin 'mysql_native_password'
+2015-10-26 19:35:17 12955 [Note] Shutting down plugin 'binlog'
+2015-10-26 19:35:17 12955 [Note] /usr/sbin/mysqld: Shutdown complete
+2015-10-27 11:20:05 18858 [Note] Plugin 'FEDERATED' is disabled.
+2015-10-27 11:20:05 18858 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2015-10-27 11:20:05 18858 [Note] InnoDB: The InnoDB memory heap is disabled
+2015-10-27 11:20:05 18858 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2015-10-27 11:20:05 18858 [Note] InnoDB: Memory barrier is not used
+2015-10-27 11:20:05 18858 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2015-10-27 11:20:05 18858 [Note] InnoDB: Using Linux native AIO
+2015-10-27 11:20:05 18858 [Note] InnoDB: Using CPU crc32 instructions
+2015-10-27 11:20:05 18858 [Note] InnoDB: Initializing buffer pool, size = 512.0M
+2015-10-27 11:20:05 18858 [Note] InnoDB: Completed initialization of buffer pool
+2015-10-27 11:20:05 18858 [Note] InnoDB: Highest supported file format is Barracuda.
+2015-10-27 11:20:05 18858 [Note] InnoDB: 128 rollback segment(s) are active.
+2015-10-27 11:20:05 18858 [Note] InnoDB: Waiting for purge to start
+2015-10-27 11:20:06 18858 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.26-74.0 started; log sequence number 773268083
+2015-10-27 11:20:06 18858 [ERROR] /usr/sbin/mysqld: unknown variable '--max-connections=512'
+2015-10-27 11:20:06 18858 [ERROR] Aborting
+2015-10-27 11:24:41 31325 [Note] Plugin 'FEDERATED' is disabled.
+2015-10-27 11:24:41 31325 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2015-10-27 11:24:41 31325 [Note] InnoDB: The InnoDB memory heap is disabled
+2015-10-27 11:24:41 31325 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2015-10-27 11:24:41 31325 [Note] InnoDB: Memory barrier is not used
+2015-10-27 11:24:41 31325 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2015-10-27 11:24:41 31325 [Note] InnoDB: Using Linux native AIO
+2015-10-27 11:24:41 31325 [Note] InnoDB: Using CPU crc32 instructions
+2015-10-27 11:24:41 31325 [Note] InnoDB: Initializing buffer pool, size = 512.0G
+InnoDB: mmap(70330089472 bytes) failed; errno 12
+2015-10-27 11:24:41 31325 [ERROR] InnoDB: Cannot allocate memory for the buffer pool
+2015-10-27 11:24:41 31325 [ERROR] Plugin 'InnoDB' init function returned error.
+2015-10-27 11:24:41 31325 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2015-10-27 11:24:41 31325 [ERROR] Unknown/unsupported storage engine: InnoDB
+2015-10-27 11:24:41 31325 [ERROR] Aborting /usr/sbin/mysqld: File './binlog.index' not found (Errcode: 13 - Permission denied)
+2015-10-27 11:31:40 11469 [ERROR] Aborting
+2015-10-27 11:32:46 13601 [Note] Plugin 'FEDERATED' is disabled.
+2015-10-27 11:32:46 13601 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2015-10-27 11:32:46 13601 [Note] InnoDB: The InnoDB memory heap is disabled
+2015-10-27 11:32:46 13601 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2015-10-27 11:32:46 13601 [Note] InnoDB: Memory barrier is not used
+2015-10-27 11:32:46 13601 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2015-10-27 11:32:46 13601 [Note] InnoDB: Using Linux native AIO
+2015-10-27 11:32:46 13601 [Note] InnoDB: Using CPU crc32 instructions
+2015-10-27 11:32:46 13601 [Note] InnoDB: Initializing buffer pool, size = 512.0M
+2015-10-27 11:32:46 13601 [Note] InnoDB: Completed initialization of buffer pool
+2015-10-27 11:32:46 13601 [ERROR] InnoDB: ./ibdata1 can't be opened in read-write mode
+2015-10-27 11:32:46 13601 [ERROR] InnoDB: The system tablespace must be writable!
+2015-10-27 11:32:46 13601 [ERROR] Plugin 'InnoDB' init function returned error.
+2015-10-27 11:32:46 13601 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2015-10-27 11:32:46 13601 [ERROR] Unknown/unsupported storage engine: InnoDB
+2015-10-27 11:32:46 13601 [ERROR] Aborting
+2015-10-27 11:35:21 17826 [Note] Plugin 'FEDERATED' is disabled.
+/usr/sbin/mysqld: Can't find file: './mysql/plugin.frm' (errno: 13 - Permission denied)
+2015-10-27 11:35:21 17826 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+2015-10-27 11:35:21 17826 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2015-10-27 11:35:21 17826 [Note] InnoDB: The InnoDB memory heap is disabled
+2015-10-27 11:35:21 17826 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2015-10-27 11:35:21 17826 [Note] InnoDB: Memory barrier is not used
+2015-10-27 11:35:21 17826 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2015-10-27 11:35:21 17826 [Note] InnoDB: Using Linux native AIO
+2015-10-27 11:35:21 17826 [Note] InnoDB: Using CPU crc32 instructions
+2015-10-27 11:35:21 17826 [Note] InnoDB: Initializing buffer pool, size = 512.0M
+2015-10-27 11:35:21 17826 [Note] InnoDB: Completed initialization of buffer pool
+2015-10-27 11:35:21 17826 [Note] InnoDB: Highest supported file format is Barracuda.
+2015-10-27 11:35:21 7fa02e97d780  InnoDB: Operating system error number 13 in a file operation.
+InnoDB: The error means mysqld does not have the access rights to
+InnoDB: the directory.
+2015-10-27 11:35:21 17826 [ERROR] InnoDB: Could not find a valid tablespace file for 'mysql/innodb_index_stats'. See http://dev.mysql.com/doc/refman/5.6/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2015-10-27 11:35:21 17826 [ERROR] InnoDB: Tablespace open failed for '"mysql"."innodb_index_stats"', ignored.
+2015-10-27 11:35:21 7fa02e97d780  InnoDB: Operating system error number 13 in a file operation.
+InnoDB: The error means mysqld does not have the access rights to
+InnoDB: the directory.
+2015-10-27 11:35:21 17826 [ERROR] InnoDB: Could not find a valid tablespace file for 'mysql/innodb_table_stats'. See http://dev.mysql.com/doc/refman/5.6/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2015-10-27 11:35:21 17826 [ERROR] InnoDB: Tablespace open failed for '"mysql"."innodb_table_stats"', ignored.
+2015-10-27 11:35:21 7fa02e97d780  InnoDB: Operating system error number 13 in a file operation.
+InnoDB: The error means mysqld does not have the access rights to
+InnoDB: the directory.
+Killed
+151027 12:18:58 mysqld_safe Number of processes running now: 0
+Killed
+151027 12:18:58 mysqld_safe Number of processes running now: 0
+151027 12:18:58 mysqld_safe WSREP: not restarting wsrep node automatically
+151027 12:18:58 mysqld_safe mysqld from pid file /var/lib/mysql/mysql.pid ended
+[370591.200799] mysqld[5462]: segfault at 51 ip 00007fe624e3e688 sp 00007fe4f4099c30 error 4 in libgcc_s.so.1[7fe624e2f000+16000]
