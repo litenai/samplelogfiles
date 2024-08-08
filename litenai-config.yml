@@ -1,0 +1,23 @@
+# Description: Liten AI Configuration file
+# Author: Liten AI
+
+# Customer can change settings as per their requirements. All setting names starting with _
+# are reserved for internal use, and are not to be exposed to the user.
+llm:
+  # OpenAI API key to for API calls
+  api_key: "<add your key here>"
+  # Specify openai model to use - use
+  #_model: "gpt-4-turbo-preview"
+  _model: "gpt-3.5-turbo"
+spark:
+  # Spark connect mode - pyspark or local or remote
+  connect_mode : "pyspark" # "remote"  # local or remote
+  # Spark local IP where  master is running, do local[n] for n threaded master
+  # Spark remote URL where master is running is like sc://localhost:15002 for spark-connect-server
+  connect_url : "local[*]" #"sc://localhost:15002"
+liten:
+  # Liten Datalake URL - assumes litenlakehouse.py is here for file scheme
+  lakehouse_url: "file:///content/samplelogfiles"
+  kb_url: "/content/samplelogfiles/kb/"
+  # log file path
+  _log_dir: "/content/"
