@@ -1,1 +1,76 @@
-[{"role": "system", "content": "You are a Bot, an automated service to talk to users. Your job is to understand prompts and answer them. You are part of a larger system  that provides with with prompt and data needed to answer that prompt. Follow the following algorithm under triple ``` below to generate completions:\n```\nIf there is at least one that contains a function call: \n    if the function exists and provided parameters match with the schema \n    return that function call\n else\n    respond with prompt text and no function call\n```\nDon't make assumptions about what values to plug into functions. If the function name appears in the prompt as keyword, prefer to use that function "}, {"role": "user", "content": "Can you plan a method to find the day of the week which usually has the highest traffic?"}, {"role": "user", "content": "You are an expert provided in the description below. You need to give a plan to solve customer problems. The plan can use following types of functions code generator to generate sql code. execute to execute the generated code on user data. analyze to analyze the data. Please add any other actions from your knowledge that user can useIf it makes sense try to use these three step. First step is typically generating sql query to search data. Second step is executing it to create selected data. Third step is to analyze the result data to answer the prompt question. You can suggest the sequence of the actions to the user. Find attached the plan description below. The desciption starts with ``` and ends with ``` again. \n```\n plan a method to find the day of the week which usually has the highest traffic \n```\n"}, {"role": "assistant", "content": "```\n1. Use the code generator to create an SQL query that calculates the traffic for each day of the week.\n2. Execute the SQL query on the relevant data to gather the traffic information.\n3. Analyze the results to determine which day of the week usually has the highest traffic.\n```"}, {"role": "assistant", "content": "```\n1. Use the code generator to create an SQL query that calculates the traffic for each day of the week.\n2. Execute the SQL query on the relevant data to gather the traffic information.\n3. Analyze the results to determine which day of the week usually has the highest traffic.\n```"}, {"role": "user", "content": "Generate sql to show the day of the week which had the highest traffic in last year?"}, {"role": "user", "content": "Generate SQL code for the given description below. The output should be a valid sql statement that can be executed as it is using spark sql. When using time related functions, prefer to use date_trunc to get truncated time values. You can use spark sql syntax.The table name is emailaccesslog The schema of the table is shown below in json format printed from Spark schema struct.\n {\"fields\":[{\"metadata\":{},\"name\":\"time\",\"nullable\":true,\"type\":\"timestamp\"},{\"metadata\":{},\"name\":\"milliSecondsLine\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"service\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"hostname\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"payloadSize\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"latency\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"status\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"api\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"messageUrl\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"hash\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"cpuLatency\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"errorCode\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"detailedErrorCode\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"exception\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"ip\",\"nullable\":true,\"type\":\"string\"}],\"type\":\"struct\"} \nThe description starts with a triple quote like ``` and ends with another triple quote\n```\n  generate sql code to show the day of the week which had the highest traffic in last year \n```\n"}, {"role": "assistant", "content": "```\nSELECT DATE_FORMAT(time, 'EEEE') AS day_of_week, COUNT(*) AS traffic_count\nFROM emailaccesslog\nWHERE time >= date_trunc('year', current_date) - interval 1 year\nGROUP BY day_of_week\nORDER BY traffic_count DESC\nLIMIT 1;\n```"}, {"role": "assistant", "content": "```\nSELECT DATE_FORMAT(time, 'EEEE') AS day_of_week, COUNT(*) AS traffic_count\nFROM emailaccesslog\nWHERE time >= date_trunc('year', current_date) - interval 1 year\nGROUP BY day_of_week\nORDER BY traffic_count DESC\nLIMIT 1;\n```"}, {"role": "user", "content": "Now execute it."}, {"role": "assistant", "content": "  day_of_week  traffic_count\n0   Wednesday          10000\n\n[1 rows x 2 columns]"}, {"role": "user", "content": "Modify the sql code to pick top 3 days of the week with highest traffic counts? And then execute it."}, {"role": "assistant", "content": "  day_of_week  traffic_count\n0   Wednesday          10000\n\n[1 rows x 2 columns]"}, {"role": "user", "content": "save history"}]
+{
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a Bot, an automated service to talk to users. Your job is to understand prompts and answer them. You are part of a larger system  that provides with with prompt and data needed to answer that prompt. Follow the following algorithm under triple ``` below to generate completions:\n```\nIf there is at least one that contains a function call: \n    if the function exists and provided parameters match with the schema \n    return that function call\n else\n    respond with prompt text and no function call\n```\nDon't make assumptions about what values to plug into functions. If the function name appears in the prompt as keyword, prefer to use that function "
+  },
+  {
+   "role": "user",
+   "content": "Can you plan a method to find the day of the week which usually has the highest traffic?"
+  },
+  {
+   "role": "user",
+   "content": "You are an expert provided in the description below. You need to give a plan to solve customer problems. The plan can use following types of functions code generator to generate sql code. execute to execute the generated code on user data. analyze to analyze the data. Please add any other actions from your knowledge that user can useIf it makes sense try to use these three step. First step is typically generating sql query to search data. Second step is executing it to create selected data. Third step is to analyze the result data to answer the prompt question. You can suggest the sequence of the actions to the user. Find attached the plan description below. The desciption starts with ``` and ends with ``` again. \n```\n plan a method to find the day of the week which usually has the highest traffic \n```\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```\n1. Use the code generator to create an SQL query that calculates the traffic for each day of the week.\n2. Execute the SQL query on the relevant data to gather the traffic information.\n3. Analyze the results to determine which day of the week usually has the highest traffic.\n```"
+  },
+  {
+   "role": "assistant",
+   "content": "```\n1. Use the code generator to create an SQL query that calculates the traffic for each day of the week.\n2. Execute the SQL query on the relevant data to gather the traffic information.\n3. Analyze the results to determine which day of the week usually has the highest traffic.\n```"
+  },
+  {
+   "role": "user",
+   "content": "Generate sql to show the day of the week which had the highest traffic in last year?"
+  },
+  {
+   "role": "user",
+   "content": "Generate SQL code for the given description below. The output should be a valid sql statement that can be executed as it is using spark sql. When using time related functions, prefer to use date_trunc to get truncated time values. You can use spark sql syntax.The table name is emailaccesslog The schema of the table is shown below in json format printed from Spark schema struct.\n {\"fields\":[{\"metadata\":{},\"name\":\"time\",\"nullable\":true,\"type\":\"timestamp\"},{\"metadata\":{},\"name\":\"milliSecondsLine\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"service\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"hostname\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"payloadSize\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"latency\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"status\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"api\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"messageUrl\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"hash\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"cpuLatency\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"errorCode\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"detailedErrorCode\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"exception\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"ip\",\"nullable\":true,\"type\":\"string\"}],\"type\":\"struct\"} \nThe description starts with a triple quote like ``` and ends with another triple quote\n```\n  generate sql code to show the day of the week which had the highest traffic in last year \n```\n"
+  },
+  {
+   "role": "assistant",
+   "content": "```\nSELECT DATE_FORMAT(time, 'EEEE') AS day_of_week, COUNT(*) AS traffic_count\nFROM emailaccesslog\nWHERE time >= date_trunc('year', current_date) - interval 1 year\nGROUP BY day_of_week\nORDER BY traffic_count DESC\nLIMIT 1;\n```"
+  },
+  {
+   "role": "assistant",
+   "content": "```\nSELECT DATE_FORMAT(time, 'EEEE') AS day_of_week, COUNT(*) AS traffic_count\nFROM emailaccesslog\nWHERE time >= date_trunc('year', current_date) - interval 1 year\nGROUP BY day_of_week\nORDER BY traffic_count DESC\nLIMIT 1;\n```"
+  },
+  {
+   "role": "user",
+   "content": "Now execute it."
+  },
+  {
+   "role": "assistant",
+   "content": "  day_of_week  traffic_count\n0   Wednesday          10000\n\n[1 rows x 2 columns]"
+  },
+  {
+   "role": "user",
+   "content": "Modify the sql code to pick top 3 days of the week with highest traffic counts? And then execute it."
+  },
+  {
+   "role": "assistant",
+   "content": "  day_of_week  traffic_count\n0   Wednesday          10000\n\n[1 rows x 2 columns]"
+  },
+  {
+   "role": "user",
+   "content": "save history"
+  }
+ ],
+ "prompts": [
+  "",
+  "Can you plan a method to find the day of the week which usually has the highest traffic?",
+  "",
+  "",
+  "",
+  "Generate sql to show the day of the week which had the highest traffic in last year?",
+  "",
+  "",
+  "",
+  "Now execute it.",
+  "",
+  "Modify the sql code to pick top 3 days of the week with highest traffic counts? And then execute it.",
+  "",
+  "save history"
+ ]
+}
