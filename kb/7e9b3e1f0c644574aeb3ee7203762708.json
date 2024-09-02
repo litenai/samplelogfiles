@@ -25,10 +25,6 @@
    "content": "```sql\nSELECT * FROM emailaccesslog LIMIT 100\n```"
   },
   {
-   "role": "assistant",
-   "content": "```sql\nSELECT * FROM emailaccesslog LIMIT 100\n```"
-  },
-  {
    "role": "user",
    "content": "now execute it"
   },
@@ -59,10 +55,6 @@
   {
    "role": "user",
    "content": "Generate SQL code for the given description below. The output should be a valid sql statement that can be executed as it is using spark sql. When using time related functions, prefer to use date_trunc to get truncated time values. You can use spark sql syntax.The table name is emailaccesslog The schema of the table is shown below in json format printed from Spark schema struct.\n {\"fields\":[{\"metadata\":{},\"name\":\"time\",\"nullable\":true,\"type\":\"timestamp\"},{\"metadata\":{},\"name\":\"milliSecondsLine\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"service\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"hostname\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"payloadSize\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"latency\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"status\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"api\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"messageUrl\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"hash\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"cpuLatency\",\"nullable\":true,\"type\":\"integer\"},{\"metadata\":{},\"name\":\"errorCode\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"detailedErrorCode\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"exception\",\"nullable\":true,\"type\":\"string\"},{\"metadata\":{},\"name\":\"ip\",\"nullable\":true,\"type\":\"string\"}],\"type\":\"struct\"} \nThe description starts with a triple quote like ``` and ends with another triple quote\n```\n  How many 200, 300, 400, 500 status codes did the service see in last one year. \n```\n"
-  },
-  {
-   "role": "assistant",
-   "content": "```sql\nSELECT status, COUNT(*) AS count\nFROM emailaccesslog\nWHERE time >= date_sub(current_timestamp(), INTERVAL 1 YEAR)\nAND status IN (200, 300, 400, 500)\nGROUP BY status\n```"
   },
   {
    "role": "assistant",
@@ -140,7 +132,6 @@
   "Generate sql code to select 100 rows from the table. Execute the generated SQL. Then plot it.",
   "",
   "",
-  "",
   "now execute it",
   "",
   "now plot it.",
@@ -148,7 +139,6 @@
   "now plot it",
   "",
   "Generate sql for the following prompt. How many 200, 300, 400, 500 status codes did the service see in last one year. And then execute the geenrated sql.",
-  "",
   "",
   "",
   "Can you now execute it?",
